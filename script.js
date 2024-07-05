@@ -5,14 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
     canvas.height = 400;
 
     let t = 0;
+    const totalFrames = 200;
 
     function drawCake() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
         // Draw base of the cake
-        if (t > 0) {
+        if (t > totalFrames * 0.25) {
             ctx.beginPath();
-            ctx.rect(150, 250, 100, 50);
+            ctx.rect(100, 300, 200, 50);
             ctx.fillStyle = "#8e24aa";
             ctx.fill();
             ctx.strokeStyle = "#6a1b9a";
@@ -21,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Draw the middle layer of the cake
-        if (t > 1) {
+        if (t > totalFrames * 0.5) {
             ctx.beginPath();
-            ctx.rect(175, 200, 50, 50);
+            ctx.rect(125, 250, 150, 50);
             ctx.fillStyle = "#ce93d8";
             ctx.fill();
             ctx.strokeStyle = "#6a1b9a";
@@ -32,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Draw the top layer of the cake
-        if (t > 2) {
+        if (t > totalFrames * 0.75) {
             ctx.beginPath();
-            ctx.arc(200, 180, 20, 0, Math.PI * 2, true);
+            ctx.rect(150, 200, 100, 50);
             ctx.fillStyle = "#ba68c8";
             ctx.fill();
             ctx.strokeStyle = "#6a1b9a";
@@ -43,19 +44,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Draw candles
-        if (t > 3) {
+        if (t > totalFrames) {
             ctx.beginPath();
-            ctx.moveTo(190, 150);
-            ctx.lineTo(190, 170);
-            ctx.moveTo(210, 150);
-            ctx.lineTo(210, 170);
+            ctx.moveTo(170, 180);
+            ctx.lineTo(170, 200);
+            ctx.moveTo(230, 180);
+            ctx.lineTo(230, 200);
             ctx.strokeStyle = "#ffb74d";
             ctx.lineWidth = 4;
             ctx.stroke();
         }
-        
-        if (t < 4) {
-            t += 0.02;
+
+        if (t <= totalFrames) {
+            t += 1;
             requestAnimationFrame(drawCake);
         }
     }
