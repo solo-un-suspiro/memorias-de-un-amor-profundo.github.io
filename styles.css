@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3e5f5;
+    background-color: #e1bee7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #7b1fa2;
+    color: #6a1b9a;
 }
 
 .poema {
@@ -31,6 +31,7 @@ h1 {
 }
 
 canvas {
-    border: 1px solid #7b1fa2;
+    border: 1px solid #6a1b9a;
     background-color: #f3e5f5;
 }
+
