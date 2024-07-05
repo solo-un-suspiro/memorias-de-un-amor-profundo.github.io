@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 20px; /* Espacio alrededor del contenido */
     box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
-    display: flex;
+    display:block;
     flex-direction:row;
     align-items: center;
 }
