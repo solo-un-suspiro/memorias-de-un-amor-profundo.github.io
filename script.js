@@ -53,6 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
             ctx.strokeStyle = "#ffb74d";
             ctx.lineWidth = 4;
             ctx.stroke();
+
+            // Mostrar el reproductor de video al finalizar la animación
+            document.getElementById('videoContainer').style.display = 'block';
+
+            // Reproducir el video
+            const video = document.getElementById('myVideo');
+            video.play();
         }
 
         if (t <= totalFrames) {
