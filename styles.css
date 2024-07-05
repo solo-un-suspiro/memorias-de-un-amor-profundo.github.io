@@ -1,11 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e1bee7;
-    display:block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -14,6 +15,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio entre cada sección */
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del contenido para evitar que se extienda demasiado */
 }
 
 h1 {
@@ -24,6 +28,7 @@ h1 {
     color: #4a148c;
     font-size: 1.2em;
     margin: 20px 0;
+    text-align: left; /* Alineación del texto */
 }
 
 #cakeContainer {
@@ -36,6 +41,8 @@ canvas {
 }
 
 #videoContainer {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para el video */
     margin-top: 20px;
 }
 
