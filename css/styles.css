@@ -1,6 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e1bee7;
+    background: url('/sources/FONDO.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     margin: 0;
     padding: 20px; /* Espacio alrededor del contenido */
     box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
@@ -12,7 +13,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para ver el patrón de flores */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
