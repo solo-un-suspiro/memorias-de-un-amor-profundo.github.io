@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: url('/sources/FONDO.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background: url('../sources/FONDO.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     margin: 0;
     padding: 20px; /* Espacio alrededor del contenido */
