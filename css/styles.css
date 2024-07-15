@@ -21,7 +21,12 @@ body {
     width: 100%;
     max-width: 800px; /* Ancho máximo del contenido para evitar que se extienda demasiado */
 }
-
+.quote {
+    font-style: italic;
+    color: #8e24aa;
+    margin: 20px 0;
+    text-align: center;
+}
 h1 {
     color: #6a1b9a;
 }
